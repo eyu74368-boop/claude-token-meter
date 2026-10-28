@@ -1,0 +1,36 @@
+# Types the engine generates into the mod folder
+.claude-plugin/types/
+
+# Dependencies and builds
+node_modules/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Logs and temp files
+*.log
+npm-debug.log*
+*.tmp
+*.bak
+.cache/
+
+# Secrets and environment
+.env
+.env.*
+*.pem
+*.key
+
+# Runtime data of the mod (may hold the user's own logs)
+token-meter/
+*.jsonl
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp

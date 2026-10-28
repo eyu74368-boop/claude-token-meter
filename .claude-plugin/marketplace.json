@@ -1,0 +1,6 @@
+{
+  "name": "claude-token-meter",
+  "description": "Token efficiency, token & tool check panes and session-size alerts for Claude Code.",
+  "owner": { "name": "claude-token-meter contributors" },
+  "plugins": [{ "name": "claude-token-meter", "source": "./" }]
+}

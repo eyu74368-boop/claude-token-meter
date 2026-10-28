@@ -1,0 +1,19 @@
+{
+  "name": "claude-token-meter",
+  "version": "0.1.0",
+  "description": "Token efficiency pane, token & tool check pane, and session-size alerts for Claude Code — in one mod, following your language setting.",
+  "author": { "name": "claude-token-meter contributors" },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "effWarn": { "type": "number", "title": "Efficiency warning line (%)", "description": "Red below this efficiency (start load ÷ current context).", "default": 40 },
+    "effCaution": { "type": "number", "title": "Efficiency caution line (%)", "description": "Orange below this efficiency.", "default": 50 },
+    "alertSteps": { "type": "string", "title": "Alert steps (%)", "description": "Comma-separated efficiency levels; an alert fires the first time efficiency drops below each.", "default": "40,30,22" },
+    "wasteTokens": { "type": "number", "title": "Waste threshold (tokens)", "description": "A turn that grows the context by more than this is logged as waste.", "default": 15000 },
+    "cacheTtlMin": { "type": "number", "title": "Prompt cache lifetime (minutes)", "description": "Used for the cache-expiry countdown.", "default": 60 },
+    "cacheMinChat": { "type": "number", "title": "Cache alert minimum (tokens)", "description": "Skip the cache-expiry alert when the conversation part is smaller than this.", "default": 40000 },
+    "startPayload": { "type": "number", "title": "Heavy start load (tokens)", "description": "Warn when the first response's input is larger than this.", "default": 60000 },
+    "keepDays": { "type": "number", "title": "Log retention (days)", "description": "Rows older than this are trimmed from the log files.", "default": 30 },
+    "language": { "type": "string", "title": "Language", "description": "auto follows Claude's language setting.", "default": "auto", "options": ["auto", "en", "ko"] }
+  }
+}
