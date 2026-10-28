@@ -24,16 +24,20 @@ Every turn re-reads the whole context. As the conversation grows, the fixed star
 At the prompt of a terminal session:
 
 ```
-/plugin install claude-token-meter --marketplace eyu74368-boop/claude-token-meter
+/plugin marketplace add https://github.com/eyu74368-boop/claude-token-meter.git
+/plugin install claude-token-meter@claude-token-meter
 ```
 
 From a shell:
 
 ```
-claude plugin install claude-token-meter --marketplace eyu74368-boop/claude-token-meter
+claude plugin marketplace add https://github.com/eyu74368-boop/claude-token-meter.git
+claude plugin install claude-token-meter@claude-token-meter
 ```
 
-In the desktop app (where `/plugin` does not run): click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `eyu74368-boop/claude-token-meter`, then **Add plugin**.
+In the desktop app (where `/plugin` does not run): click **+** next to the prompt box, then **Plugins**, **Add marketplace** with `https://github.com/eyu74368-boop/claude-token-meter.git`, then **Add plugin**.
+
+Use the HTTPS URL: the short `owner/repo` form clones over SSH and fails when GitHub is not in your `known_hosts`. The panes and alerts are hook modules, which are in early access; if nothing shows up, your Claude Code build may not have them turned on yet.
 
 ## Settings
 

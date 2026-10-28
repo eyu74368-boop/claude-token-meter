@@ -24,16 +24,20 @@
 터미널 세션의 프롬프트에서:
 
 ```
-/plugin install claude-token-meter --marketplace eyu74368-boop/claude-token-meter
+/plugin marketplace add https://github.com/eyu74368-boop/claude-token-meter.git
+/plugin install claude-token-meter@claude-token-meter
 ```
 
 셸에서:
 
 ```
-claude plugin install claude-token-meter --marketplace eyu74368-boop/claude-token-meter
+claude plugin marketplace add https://github.com/eyu74368-boop/claude-token-meter.git
+claude plugin install claude-token-meter@claude-token-meter
 ```
 
-데스크톱 앱(`/plugin`이 안 되는 곳): 입력창 옆 **+** → **Plugins** → **Add marketplace**에 `eyu74368-boop/claude-token-meter` 입력 → **Add plugin**.
+데스크톱 앱(`/plugin`이 안 되는 곳): 입력창 옆 **+** → **Plugins** → **Add marketplace**에 `https://github.com/eyu74368-boop/claude-token-meter.git` 입력 → **Add plugin**.
+
+HTTPS 주소를 쓰세요. 짧은 `owner/repo` 형식은 SSH로 받아서, `known_hosts`에 GitHub가 없으면 실패합니다. 패널·알림은 훅 모듈(얼리 액세스)이라, 아무것도 안 보이면 쓰는 Claude Code 빌드에서 아직 켜지지 않은 것일 수 있습니다.
 
 ## 설정
 
